@@ -176,3 +176,69 @@ config.json
 
 llm_multidim_eval_gpt51/config.json
 llm_multidim_eval_claude_sonnet4/config.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+config.json
+*config.local.json
+*secret*.json
+*key*.json
+api_keys.*
+credentials.*
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.mat
+
+data/*
+!data/README.md
+!data/.gitkeep
+
+# Checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+checkpoints/*
+!checkpoints/README.md
+!checkpoints/.gitkeep
+
+# Raw experiment outputs
+grid_runs/
+grid_runs_1d/
+eval_runs/
+best_only_runs_1d/
+best_only_runs_multi/
+best_only_runs_multi_parallel/
+full_grid_runs_multi_parallel/
+repeat_runs_*/
+no_taylor_degree0_runs*/
+baseline_cpu_ms_per_sample_results/
+hybrid_cpu_inference_time_results/
+hybrid_inference_time_parallel_results/
+runs_10x/
+outputs/
+wandb/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
