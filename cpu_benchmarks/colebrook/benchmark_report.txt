@@ -1,0 +1,259 @@
+=== CPU Per-Sample Benchmark Report ===
+
+[Args]
+test_npz: ./colebrook_data/colebrook_deg25_test.npz
+model: ./runs/colebrook_root_deg25/best_model.pt
+num_samples: 2000
+repeats: 30
+warmup: 5
+max_newton_iter: 20
+tol: 1e-12
+out_dir: ./cpu_benchmarks/colebrook
+seed: 42
+
+[Summary]
+--------------------------------------------------------------------------------
+method: zero_init_direct
+n_timed_calls: 60000
+time_mean_us: 0.17855034999999997
+time_median_us: 0.168
+time_p90_us: 0.186
+time_p95_us: 0.209
+time_p99_us: 0.397
+time_min_us: 0.152
+time_max_us: 6.557
+mae_mean: 0.8257818711549246
+mae_median: 0.7644807551800525
+--------------------------------------------------------------------------------
+method: zero_init_plus_newton
+n_timed_calls: 60000
+time_mean_us: 3.1121401166666667
+time_median_us: 3.009
+time_p90_us: 3.772
+time_p95_us: 4.3
+time_p99_us: 4.956010000000003
+time_min_us: 2.181
+time_max_us: 12.669
+mae_mean: 5.561633786973705e-14
+mae_median: 9.992007221626409e-16
+iter_mean: 3.162
+iter_median: 3.0
+iter_p90: 4.0
+iter_p95: 5.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: heuristic_direct
+n_timed_calls: 60000
+time_mean_us: 0.2530350333333333
+time_median_us: 0.24
+time_p90_us: 0.277
+time_p95_us: 0.308
+time_p99_us: 0.428
+time_min_us: 0.214
+time_max_us: 3.651
+mae_mean: 0.1558506287661948
+mae_median: 0.052677645647491333
+--------------------------------------------------------------------------------
+method: heuristic_plus_newton
+n_timed_calls: 60000
+time_mean_us: 2.8753901500000003
+time_median_us: 2.603
+time_p90_us: 3.722
+time_p95_us: 3.842
+time_p99_us: 4.476
+time_min_us: 1.693
+time_max_us: 9.709
+mae_mean: 4.266962407321537e-14
+mae_median: 7.528699885739343e-16
+iter_mean: 2.7675
+iter_median: 2.0
+iter_p90: 4.0
+iter_p95: 4.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: neural_direct
+n_timed_calls: 60000
+time_mean_us: 68.0852858
+time_median_us: 67.373
+time_p90_us: 70.167
+time_p95_us: 72.50814999999999
+time_p99_us: 79.82002
+time_min_us: 64.575
+time_max_us: 160.001
+mae_mean: 0.006718322019236183
+mae_median: 0.005891438544755656
+--------------------------------------------------------------------------------
+method: neural_plus_newton
+n_timed_calls: 60000
+time_mean_us: 75.67722498333332
+time_median_us: 75.281
+time_p90_us: 77.29610000000001
+time_p95_us: 78.51605
+time_p99_us: 81.92601
+time_min_us: 71.718
+time_max_us: 831.486
+mae_mean: 4.213621931838801e-14
+mae_median: 4.440892098500626e-16
+iter_mean: 2.323
+iter_median: 2.0
+iter_p90: 3.0
+iter_p95: 3.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: neural_plus_newton_pred_only
+n_timed_calls: 60000
+time_mean_us: 70.95855283333333
+time_median_us: 70.602
+time_p90_us: 72.257
+time_p95_us: 73.544
+time_p99_us: 76.81503000000001
+time_min_us: 67.414
+time_max_us: 824.51
+mae_mean: 0.006718322019236183
+mae_median: 0.005891438544755656
+--------------------------------------------------------------------------------
+method: neural_plus_newton_refine_only
+n_timed_calls: 60000
+time_mean_us: 3.71533
+time_median_us: 3.609
+time_p90_us: 4.228
+time_p95_us: 4.358
+time_p99_us: 4.975010000000002
+time_min_us: 2.556
+time_max_us: 11.154
+mae_mean: 4.213621931838801e-14
+mae_median: 4.440892098500626e-16
+iter_mean: 2.323
+iter_median: 2.0
+iter_p90: 3.0
+iter_p95: 3.0
+success_rate: 1.0=== CPU Per-Sample Benchmark Report ===
+
+[Args]
+test_npz: ./colebrook_data/colebrook_deg25_test.npz
+model: ./runs/colebrook_root_deg25/best_model.pt
+num_samples: 2000
+repeats: 30
+warmup: 5
+max_newton_iter: 20
+tol: 1e-12
+out_dir: ./cpu_benchmarks/colebrook
+seed: 42
+
+[Summary]
+--------------------------------------------------------------------------------
+method: zero_init_direct
+n_timed_calls: 60000
+time_mean_us: 0.17855034999999997
+time_median_us: 0.168
+time_p90_us: 0.186
+time_p95_us: 0.209
+time_p99_us: 0.397
+time_min_us: 0.152
+time_max_us: 6.557
+mae_mean: 0.8257818711549246
+mae_median: 0.7644807551800525
+--------------------------------------------------------------------------------
+method: zero_init_plus_newton
+n_timed_calls: 60000
+time_mean_us: 3.1121401166666667
+time_median_us: 3.009
+time_p90_us: 3.772
+time_p95_us: 4.3
+time_p99_us: 4.956010000000003
+time_min_us: 2.181
+time_max_us: 12.669
+mae_mean: 5.561633786973705e-14
+mae_median: 9.992007221626409e-16
+iter_mean: 3.162
+iter_median: 3.0
+iter_p90: 4.0
+iter_p95: 5.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: heuristic_direct
+n_timed_calls: 60000
+time_mean_us: 0.2530350333333333
+time_median_us: 0.24
+time_p90_us: 0.277
+time_p95_us: 0.308
+time_p99_us: 0.428
+time_min_us: 0.214
+time_max_us: 3.651
+mae_mean: 0.1558506287661948
+mae_median: 0.052677645647491333
+--------------------------------------------------------------------------------
+method: heuristic_plus_newton
+n_timed_calls: 60000
+time_mean_us: 2.8753901500000003
+time_median_us: 2.603
+time_p90_us: 3.722
+time_p95_us: 3.842
+time_p99_us: 4.476
+time_min_us: 1.693
+time_max_us: 9.709
+mae_mean: 4.266962407321537e-14
+mae_median: 7.528699885739343e-16
+iter_mean: 2.7675
+iter_median: 2.0
+iter_p90: 4.0
+iter_p95: 4.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: neural_direct
+n_timed_calls: 60000
+time_mean_us: 68.0852858
+time_median_us: 67.373
+time_p90_us: 70.167
+time_p95_us: 72.50814999999999
+time_p99_us: 79.82002
+time_min_us: 64.575
+time_max_us: 160.001
+mae_mean: 0.006718322019236183
+mae_median: 0.005891438544755656
+--------------------------------------------------------------------------------
+method: neural_plus_newton
+n_timed_calls: 60000
+time_mean_us: 75.67722498333332
+time_median_us: 75.281
+time_p90_us: 77.29610000000001
+time_p95_us: 78.51605
+time_p99_us: 81.92601
+time_min_us: 71.718
+time_max_us: 831.486
+mae_mean: 4.213621931838801e-14
+mae_median: 4.440892098500626e-16
+iter_mean: 2.323
+iter_median: 2.0
+iter_p90: 3.0
+iter_p95: 3.0
+success_rate: 1.0
+--------------------------------------------------------------------------------
+method: neural_plus_newton_pred_only
+n_timed_calls: 60000
+time_mean_us: 70.95855283333333
+time_median_us: 70.602
+time_p90_us: 72.257
+time_p95_us: 73.544
+time_p99_us: 76.81503000000001
+time_min_us: 67.414
+time_max_us: 824.51
+mae_mean: 0.006718322019236183
+mae_median: 0.005891438544755656
+--------------------------------------------------------------------------------
+method: neural_plus_newton_refine_only
+n_timed_calls: 60000
+time_mean_us: 3.71533
+time_median_us: 3.609
+time_p90_us: 4.228
+time_p95_us: 4.358
+time_p99_us: 4.975010000000002
+time_min_us: 2.556
+time_max_us: 11.154
+mae_mean: 4.213621931838801e-14
+mae_median: 4.440892098500626e-16
+iter_mean: 2.323
+iter_median: 2.0
+iter_p90: 3.0
+iter_p95: 3.0
+success_rate: 1.0

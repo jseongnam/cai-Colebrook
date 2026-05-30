@@ -1,0 +1,14 @@
+\begin{table*}
+\caption{Model-wise average performance of the direct-regression ablation over the tested Taylor degrees.}
+\label{tab:direct_regression_model_average}
+\begin{tabular}{lllrllll}
+\toprule
+Model & Mean Direct RMSE & Mean Direct R2 & direct_residual_mean & Mean Newton RMSE & Mean Newton Residual & Mean Iter. & Mean Conv. \\
+\midrule
+GRU & 5.517e-03 & 0.99992 & 3.544606 & 1.282e-02 & 4.011e-01 & 4.1209 & 0.94403 \\
+LSTM & 5.804e-03 & 0.99991 & 3.237899 & 5.756e-03 & 3.409e-01 & 4.1770 & 0.95568 \\
+MLP & 2.178e-02 & 0.99871 & 11.256740 & 2.306e-02 & 8.905e-01 & 4.1410 & 0.88382 \\
+Transformer & 7.735e-03 & 0.99984 & 2.291689 & 1.270e-02 & 8.704e-01 & 3.5778 & 0.86113 \\
+\bottomrule
+\end{tabular}
+\end{table*}

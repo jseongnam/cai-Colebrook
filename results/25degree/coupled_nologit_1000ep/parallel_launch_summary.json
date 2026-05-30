@@ -1,0 +1,66 @@
+{
+  "degree": 25,
+  "models": [
+    "mlp",
+    "lstm",
+    "gru",
+    "transformer"
+  ],
+  "max_parallel": 4,
+  "gpus": [],
+  "trainer": "/root/project/dataset/math_03_14/train_coupled_nologit_ablation.py",
+  "train_npz": "/root/project/dataset/math_03_14/multi_colebrook_data_deg25/parallel2_colebrook_deg25_train.npz",
+  "val_npz": "/root/project/dataset/math_03_14/multi_colebrook_data_deg25/parallel2_colebrook_deg25_val.npz",
+  "test_npz": "/root/project/dataset/math_03_14/multi_colebrook_data_deg25/parallel2_colebrook_deg25_test.npz",
+  "out_root": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep",
+  "start_time": 1778558852.6744215,
+  "end_time": 1778570853.8044279,
+  "total_duration_sec": 12001.130006313324,
+  "finished_records": [
+    {
+      "model": "mlp",
+      "pid": 2850833,
+      "gpu": "inherited",
+      "log_path": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/_logs/nologit_deg25_mlp.log",
+      "out_dir": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/mlp",
+      "start_time": 1778558852.6790745,
+      "returncode": 0,
+      "end_time": 1778567881.045505,
+      "duration_sec": 9028.366430521011
+    },
+    {
+      "model": "gru",
+      "pid": 2850835,
+      "gpu": "inherited",
+      "log_path": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/_logs/nologit_deg25_gru.log",
+      "out_dir": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/gru",
+      "start_time": 1778558852.6847944,
+      "returncode": 0,
+      "end_time": 1778569162.2373264,
+      "duration_sec": 10309.552531957626
+    },
+    {
+      "model": "lstm",
+      "pid": 2850834,
+      "gpu": "inherited",
+      "log_path": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/_logs/nologit_deg25_lstm.log",
+      "out_dir": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/lstm",
+      "start_time": 1778558852.6817272,
+      "returncode": 0,
+      "end_time": 1778569302.363629,
+      "duration_sec": 10449.681901931763
+    },
+    {
+      "model": "transformer",
+      "pid": 2850836,
+      "gpu": "inherited",
+      "log_path": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/_logs/nologit_deg25_transformer.log",
+      "out_dir": "/root/project/dataset/math_03_14/results/25degree/coupled_nologit_1000ep/transformer",
+      "start_time": 1778558852.6930587,
+      "returncode": 0,
+      "end_time": 1778570853.8043227,
+      "duration_sec": 12001.111263990402
+    }
+  ],
+  "skipped_records": []
+}

@@ -1,0 +1,73 @@
+{
+  "num_trials": 90,
+  "direct_weights": {
+    "direct_r2": 0.3,
+    "direct_rmse": 0.25,
+    "direct_mae": 0.1,
+    "direct_residual_mean": 0.15,
+    "direct_residual_median": 0.08,
+    "direct_residual_p90": 0.1,
+    "direct_valid_ratio": 0.02
+  },
+  "plus_weights": {
+    "plus_newton_r2": 0.2,
+    "plus_newton_rmse": 0.2,
+    "plus_newton_mae": 0.08,
+    "plus_newton_residual_mean": 0.1,
+    "plus_newton_residual_median": 0.06,
+    "plus_newton_residual_p90": 0.1,
+    "plus_newton_newton_iter_mean": 0.14,
+    "plus_newton_newton_iter_median": 0.04,
+    "plus_newton_newton_iter_p90": 0.05,
+    "plus_newton_valid_ratio": 0.01,
+    "plus_newton_converged_ratio": 0.02
+  },
+  "overall_mix": {
+    "direct_score": 0.4,
+    "plus_score": 0.6
+  },
+  "best_overall": {
+    "trial_id": 64,
+    "trial_name": "trial_064_transformer",
+    "model": "transformer",
+    "overall_score": 0.5482463234941491,
+    "direct_score": 0.8763479531176328,
+    "plus_score": 0.32951190374516004
+  }
+}{
+  "num_trials": 90,
+  "direct_weights": {
+    "direct_r2": 0.3,
+    "direct_rmse": 0.25,
+    "direct_mae": 0.1,
+    "direct_residual_mean": 0.15,
+    "direct_residual_median": 0.08,
+    "direct_residual_p90": 0.1,
+    "direct_valid_ratio": 0.02
+  },
+  "plus_weights": {
+    "plus_newton_r2": 0.2,
+    "plus_newton_rmse": 0.2,
+    "plus_newton_mae": 0.08,
+    "plus_newton_residual_mean": 0.1,
+    "plus_newton_residual_median": 0.06,
+    "plus_newton_residual_p90": 0.1,
+    "plus_newton_newton_iter_mean": 0.14,
+    "plus_newton_newton_iter_median": 0.04,
+    "plus_newton_newton_iter_p90": 0.05,
+    "plus_newton_valid_ratio": 0.01,
+    "plus_newton_converged_ratio": 0.02
+  },
+  "overall_mix": {
+    "direct_score": 0.4,
+    "plus_score": 0.6
+  },
+  "best_overall": {
+    "trial_id": 64,
+    "trial_name": "trial_064_transformer",
+    "model": "transformer",
+    "overall_score": 0.5482463234941491,
+    "direct_score": 0.8763479531176328,
+    "plus_score": 0.32951190374516004
+  }
+}

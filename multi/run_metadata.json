@@ -1,0 +1,9 @@
+{
+  "test": "/home/seokjun/math_03_14/multi_colebrook_data_deg25/parallel2_colebrook_deg25_test.npz",
+  "train": null,
+  "val": null,
+  "problem_type": "parallel2",
+  "tol": 1e-12,
+  "multi_tol": 1e-10,
+  "max_iter": 40
+}

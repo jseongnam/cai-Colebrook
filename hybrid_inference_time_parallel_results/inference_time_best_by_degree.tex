@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Best inference-time result for each Taylor degree selected by neural\_direct\_total\_ms\_per\_sample\_mean.}
+\label{tab:multidim_inference_time_best_by_degree}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllllllll}
+\hline
+Degree & Model & Direct RMSE & Forward GPU ms/sample & Forward+Copy ms/sample & Direct Total ms/sample & Neural+Newton ms/sample & Neural Iter. & Neural Conv. \\
+\hline
+10 & LSTM & 6.170e-04 & 0.00098 & 0.00487 & 0.21003 & 1.00302 & 2.216 & 1.00000 \\
+15 & MLP & 5.711e-04 & 0.00062 & 0.00466 & 0.21312 & 1.05428 & 2.421 & 1.00000 \\
+20 & TRANSFORMER & 7.370e-04 & 0.00419 & 0.00634 & 0.22396 & 0.96208 & 2.139 & 1.00000 \\
+25 & MLP & 3.550e-04 & 0.00068 & 0.00595 & 0.21847 & 1.02182 & 2.275 & 1.00000 \\
+30 & MLP & 4.228e-04 & 0.00070 & 0.00603 & 0.22057 & 1.06530 & 2.360 & 1.00000 \\
+35 & GRU & 6.243e-04 & 0.00289 & 0.00639 & 0.22694 & 1.00352 & 2.231 & 1.00000 \\
+\hline
+\end{tabular}%
+}
+\end{table*}

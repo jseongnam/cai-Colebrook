@@ -1,0 +1,13 @@
+{
+  "test_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_test.npz",
+  "trial_json_dir": "/home/seokjun/math_03_14/grid_runs_1d/deg25_search_mlp",
+  "json_pattern": "trial_*.json",
+  "baseline_method": "fixed",
+  "tol": 1e-12,
+  "max_newton_iter": 20,
+  "step_clip": 5.0,
+  "direct_best_metric": "direct_rmse",
+  "newton_best_metric": "plus_newton_newton_iter_mean",
+  "n_trial_jsons": 4405,
+  "n_total_rows_with_baseline": 4406
+}

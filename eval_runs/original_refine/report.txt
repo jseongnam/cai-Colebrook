@@ -1,0 +1,167 @@
+=== Evaluation Report (ORIGINAL equation refinement) ===
+
+[Args]
+test_npz: ./colebrook_data/colebrook_deg25_test.npz
+model: ['coeffs_x0_ab=./runs/colebrook_root_deg25/best_model.pt']
+max_newton_iter: 20
+tol: 1e-12
+damping: 1.0
+batch_size: 4096
+out_dir: ./eval_runs/original_refine
+
+[Summary]
+--------------------------------------------------------------------------------
+name: zero_init_direct
+mae: 0.8393752715857751
+rmse: 0.9893829557969367
+r2: -0.018969557409359794
+valid_ratio: 1.0
+residual_mean: 1.0036408500467162
+residual_median: 1.0106555470995804
+residual_p90: 1.8075786917399246
+max_abs_error: 1.9969543610766085
+--------------------------------------------------------------------------------
+name: zero_init_plus_newton
+mae: 5.897175095728106e-14
+rmse: 1.4487321707582038e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 4.728361037991969e-14
+residual_median: 1.214306433183765e-16
+residual_p90: 1.2404521854136886e-13
+newton_iter_mean: 3.0762
+newton_iter_median: 3.0
+newton_iter_p90: 4.0
+newton_converged_ratio: 1.0
+max_abs_error: 1.0648704140692189e-12
+--------------------------------------------------------------------------------
+name: heuristic_direct
+mae: 0.16426557846094125
+rmse: 0.3072519121554526
+r2: 0.9017298658106261
+valid_ratio: 1.0
+residual_mean: 0.2356004625451435
+residual_median: 0.05923897626858782
+residual_p90: 0.7574152015046322
+max_abs_error: 1.4992124775262563
+--------------------------------------------------------------------------------
+name: heuristic_plus_newton
+mae: 4.6712597763304346e-14
+rmse: 1.2294699881798948e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 3.3638416825766914e-14
+residual_median: 1.1102230246251565e-16
+residual_p90: 4.708455847435293e-14
+newton_iter_mean: 2.6718
+newton_iter_median: 2.0
+newton_iter_p90: 4.0
+newton_converged_ratio: 1.0
+max_abs_error: 9.612310947204605e-13
+--------------------------------------------------------------------------------
+name: coeffs_x0_ab_direct
+mae: 0.006917906367913548
+rmse: 0.008768112416308314
+r2: 0.9999199715180435
+valid_ratio: 1.0
+residual_mean: 0.00829014334507924
+residual_median: 0.0070508064716655605
+residual_p90: 0.016293809323036174
+max_abs_error: 0.05600173478900017
+--------------------------------------------------------------------------------
+name: coeffs_x0_ab_plus_newton
+mae: 4.303134760665913e-14
+rmse: 1.094005404510563e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 3.321901573701523e-14
+residual_median: 1.1102230246251565e-16
+residual_p90: 4.665157149474916e-14
+newton_iter_mean: 2.1218
+newton_iter_median: 2.0
+newton_iter_p90: 3.0
+newton_converged_ratio: 1.0
+max_abs_error: 9.36584143573782e-13=== Evaluation Report (ORIGINAL equation refinement) ===
+
+[Args]
+test_npz: ./colebrook_data/colebrook_deg25_test.npz
+model: ['coeffs_x0_ab=./runs/colebrook_root_deg25/best_model.pt']
+max_newton_iter: 20
+tol: 1e-12
+damping: 1.0
+batch_size: 4096
+out_dir: ./eval_runs/original_refine
+
+[Summary]
+--------------------------------------------------------------------------------
+name: zero_init_direct
+mae: 0.8393752715857751
+rmse: 0.9893829557969367
+r2: -0.018969557409359794
+valid_ratio: 1.0
+residual_mean: 1.0036408500467162
+residual_median: 1.0106555470995804
+residual_p90: 1.8075786917399246
+max_abs_error: 1.9969543610766085
+--------------------------------------------------------------------------------
+name: zero_init_plus_newton
+mae: 5.897175095728106e-14
+rmse: 1.4487321707582038e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 4.728361037991969e-14
+residual_median: 1.214306433183765e-16
+residual_p90: 1.2404521854136886e-13
+newton_iter_mean: 3.0762
+newton_iter_median: 3.0
+newton_iter_p90: 4.0
+newton_converged_ratio: 1.0
+max_abs_error: 1.0648704140692189e-12
+--------------------------------------------------------------------------------
+name: heuristic_direct
+mae: 0.16426557846094125
+rmse: 0.3072519121554526
+r2: 0.9017298658106261
+valid_ratio: 1.0
+residual_mean: 0.2356004625451435
+residual_median: 0.05923897626858782
+residual_p90: 0.7574152015046322
+max_abs_error: 1.4992124775262563
+--------------------------------------------------------------------------------
+name: heuristic_plus_newton
+mae: 4.6712597763304346e-14
+rmse: 1.2294699881798948e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 3.3638416825766914e-14
+residual_median: 1.1102230246251565e-16
+residual_p90: 4.708455847435293e-14
+newton_iter_mean: 2.6718
+newton_iter_median: 2.0
+newton_iter_p90: 4.0
+newton_converged_ratio: 1.0
+max_abs_error: 9.612310947204605e-13
+--------------------------------------------------------------------------------
+name: coeffs_x0_ab_direct
+mae: 0.006917906367913548
+rmse: 0.008768112416308314
+r2: 0.9999199715180435
+valid_ratio: 1.0
+residual_mean: 0.00829014334507924
+residual_median: 0.0070508064716655605
+residual_p90: 0.016293809323036174
+max_abs_error: 0.05600173478900017
+--------------------------------------------------------------------------------
+name: coeffs_x0_ab_plus_newton
+mae: 4.303134760665913e-14
+rmse: 1.094005404510563e-13
+r2: 1.0
+valid_ratio: 1.0
+residual_mean: 3.321901573701523e-14
+residual_median: 1.1102230246251565e-16
+residual_p90: 4.665157149474916e-14
+newton_iter_mean: 2.1218
+newton_iter_median: 2.0
+newton_iter_p90: 3.0
+newton_converged_ratio: 1.0
+max_abs_error: 9.36584143573782e-13

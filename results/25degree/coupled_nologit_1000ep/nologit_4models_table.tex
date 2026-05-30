@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{No-logit correction ablation results on the coupled pipe-flow test set at Taylor degree $K=25$. The baseline-aware correction target is retained, but the flow-ratio correction is performed in the raw ratio space rather than logit space.}
+\label{tab:nologit_ablation_k25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\hline
+Model & Direct RMSE & Direct Residual Mean & Newton RMSE & Newton Residual Mean & Iter. Mean & Conv. Ratio & ms/sample \\
+\hline
+MLP & 4.935e-04 & 3.339e-02 & 4.119e-03 & 3.011e-04 & 20.000 & 0.00000 & 9.53423 \\
+LSTM & 5.999e-04 & 2.431e-02 & 1.186e-02 & 1.296e-03 & 20.000 & 0.00000 & 9.59363 \\
+GRU & 6.237e-04 & 3.913e-02 & 2.120e-02 & 3.193e-03 & 20.000 & 0.00000 & 9.50415 \\
+Transformer & 6.174e-04 & 2.925e-02 & 1.606e-02 & 1.200e-03 & 20.000 & 0.00000 & 9.61336 \\
+\hline
+\end{tabular}%
+}
+\end{table*}

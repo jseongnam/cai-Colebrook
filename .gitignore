@@ -1,0 +1,178 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+pip-wheel-metadata/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+log/
+
+# =========================
+# Build / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Data files
+# =========================
+*.npz
+*.npy
+*.csv
+*.tsv
+*.jsonl
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.mat
+
+data/*
+!data/README.md
+!data/.gitkeep
+
+datasets/*
+!datasets/README.md
+!datasets/.gitkeep
+
+# =========================
+# Model checkpoints
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.safetensors
+
+checkpoints/*
+!checkpoints/README.md
+!checkpoints/.gitkeep
+
+weights/*
+!weights/README.md
+!weights/.gitkeep
+
+# =========================
+# Training outputs
+# =========================
+runs/
+outputs/
+output/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+tb_logs/
+
+# =========================
+# Results
+# =========================
+results/tmp/
+results/cache/
+results/raw/
+results/runs/
+results/outputs/
+
+# Keep result documentation if needed
+!results/README.md
+!results/tables/
+!results/figures/
+!results/pdf/
+
+# =========================
+# Large archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# =========================
+# Media / videos
+# =========================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+.cache/
+
+# =========================
+# Windows shortcuts
+# =========================
+*.lnk
+# Secrets / API keys
+.env
+.env.*
+!.env.example
+
+config.json
+*config.local.json
+*secret*.json
+*key*.json
+
+llm_multidim_eval_gpt51/config.json
+llm_multidim_eval_claude_sonnet4/config.json

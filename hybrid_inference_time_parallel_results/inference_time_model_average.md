@@ -1,0 +1,6 @@
+| Model | N Degree-Model Rows | Avg Direct RMSE | Avg Forward GPU ms/sample | Avg Forward+Copy ms/sample | Avg Direct Total ms/sample | Avg Neural+Newton ms/sample | Avg Iter. | Avg Conv. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GRU | 6 | 5.762e-04 | 0.00218 | 0.00569 | 0.22724 | 1.00936 | 2.239 | 1.00000 |
+| LSTM | 6 | 6.770e-04 | 0.00475 | 0.00464 | 0.22994 | 0.99196 | 2.243 | 1.00000 |
+| MLP | 6 | 4.462e-04 | 0.00173 | 0.00589 | 0.22455 | 1.04895 | 2.382 | 1.00000 |
+| TRANSFORMER | 6 | 6.791e-04 | 0.00454 | 0.00550 | 0.22982 | 0.98480 | 2.199 | 1.00000 |

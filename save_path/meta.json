@@ -1,0 +1,85 @@
+{
+  "train_target_mean": -0.12660476565361023,
+  "has_other_root_feature": false,
+  "model": {
+    "input_dim": 26,
+    "hidden_dims": [
+      256,
+      256,
+      128
+    ],
+    "dropout": 0.05,
+    "activation": "gelu"
+  },
+  "train_config": {
+    "train_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_train.npz",
+    "val_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_val.npz",
+    "test_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_test.npz",
+    "save_dir": "/home/seokjun/math_03_14/save_path",
+    "coeffs_key": "coeffs",
+    "target_key": "root",
+    "other_root_key": "root2_label",
+    "seed": 42,
+    "epochs": 3000,
+    "batch_size": 512,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "hidden_dims": [
+      256,
+      256,
+      128
+    ],
+    "dropout": 0.05,
+    "activation": "gelu",
+    "patience": 200,
+    "mode": "residual",
+    "residual_anchor": "linearized",
+    "hard_weight_alpha": 1.0,
+    "residual_loss_lambda": 0.0,
+    "grad_clip": 5.0,
+    "num_workers": 0,
+    "device": "cuda"
+  }
+}{
+  "train_target_mean": -0.12660476565361023,
+  "has_other_root_feature": false,
+  "model": {
+    "input_dim": 26,
+    "hidden_dims": [
+      256,
+      256,
+      128
+    ],
+    "dropout": 0.05,
+    "activation": "gelu"
+  },
+  "train_config": {
+    "train_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_train.npz",
+    "val_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_val.npz",
+    "test_npz": "/home/seokjun/math_03_14/colebrook_data/colebrook_deg25_test.npz",
+    "save_dir": "/home/seokjun/math_03_14/save_path",
+    "coeffs_key": "coeffs",
+    "target_key": "root",
+    "other_root_key": "root2_label",
+    "seed": 42,
+    "epochs": 3000,
+    "batch_size": 512,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "hidden_dims": [
+      256,
+      256,
+      128
+    ],
+    "dropout": 0.05,
+    "activation": "gelu",
+    "patience": 200,
+    "mode": "residual",
+    "residual_anchor": "linearized",
+    "hard_weight_alpha": 1.0,
+    "residual_loss_lambda": 0.0,
+    "grad_clip": 5.0,
+    "num_workers": 0,
+    "device": "cuda"
+  }
+}
