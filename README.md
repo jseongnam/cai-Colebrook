@@ -438,16 +438,6 @@ Related work:
 
 The Taylor Root Prediction project reformulates nonlinear root finding as a structured neural prediction problem using Transformer-based interval localization, local Taylor representations, coefficient-based neural regression, and residual validation.
 
-## Citation
-
-This manuscript is currently under review. Citation information will be updated after publication.
-
-For now, please refer to this repository as:
-
-```text
-Jeong, S. and Oh, Y. Hybrid Deep Learning and Newton Refinement: A Baseline-Aware Correction Framework for Nonlinear Pipe-Flow Equations. Manuscript under review.
-```
-
 ## Contact
 
 - SeokJun Jeong
