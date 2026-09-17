@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+data_extended/
+data_smoke/
+results_extended/
+results_smoke/
+data_canonical*/
+results_canonical*/
+legacy_leakage_audit.json
